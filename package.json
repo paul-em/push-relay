@@ -1,0 +1,17 @@
+{
+  "name": "push-relay",
+  "version": "1.0.0",
+  "description": "Standardized Push Messaging and Push Notifications for Web Applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "pushAPI",
+    "w3c",
+    "push",
+    "notifications"
+  ],
+  "author": "Paul Em",
+  "license": "ISC"
+}
