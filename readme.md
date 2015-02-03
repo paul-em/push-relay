@@ -1,1 +1,0 @@
-Standardized Push Messaging and Push Notifications for Web Applications - more information soon

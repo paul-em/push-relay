@@ -44,7 +44,7 @@ nock('https://android.googleapis.com:443')
 
 describe('api put', function () {
     before(function(){
-        require('./../lib');
+        require('./../index');
     });
     it('should successfully send push message', function (done) {
         var message = 'right data';

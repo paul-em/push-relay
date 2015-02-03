@@ -13,13 +13,30 @@ var gcm = require('node-gcm');
  * load config
  */
 if (!argv.cert || !argv.key || !argv.apikey) {
-    throw new Error('Missing arguments! Be sure to add --cert, --key and --apikey parameters with associating file paths.');
+    //throw new Error('Missing arguments! Be sure to add --cert, --key and --apikey parameters with associating file paths.');
 }
-
-var cert = fs.readFileSync(argv.cert, {encoding: 'utf8'});
-var key = fs.readFileSync(argv.key, {encoding: 'utf8'});
-var apikey = fs.readFileSync(argv.apikey, {encoding: 'utf8'});
-var port = argv.port || 443;
+try {
+    var certPath = argv.cert || 'server.crt';
+    var cert = fs.readFileSync(certPath, {encoding: 'utf8'});
+    var keyPath = argv.key || 'server.key';
+    var key = fs.readFileSync(keyPath, {encoding: 'utf8'});
+    var apikeyPath = argv.apikey || 'apikey';
+    var apikey = fs.readFileSync(apikeyPath, {encoding: 'utf8'});
+    var port = argv.port || 443;
+} catch (e) {
+    if (e.code !== 'ENOENT') {
+        throw e;
+    }
+}
+if (!cert) {
+    throw new Error('Cert file not found in path ' + certPath);
+}
+if (!key) {
+    throw new Error('Key file not found in path ' + keyPath);
+}
+if (!apikey) {
+    throw new Error('ApiKey file not found in path ' + apikeyPath);
+}
 
 /**
  * set up gcm
@@ -53,6 +70,7 @@ server.use(function (req, res, next) {
 });
 server.use(restify.gzipResponse());
 server.listen(port);
+console.log('server listening on port', port);
 
 /**
  * PUT route for single recipients
@@ -63,9 +81,9 @@ server.put('/p/:id', function (req, res, next) {
             data: req.body
         }
     }), [req.params.id], function (err, result) {
-        if(err){
+        if (err) {
             res.send(500, err);
-        } else if(!result || result.failure === 1){
+        } else if (!result || result.failure === 1) {
             res.send(401, result.results[0]);
         } else {
             res.send(200);
@@ -80,11 +98,11 @@ server.put('/a', function (req, res, next) {
     var body;
     try {
         body = JSON.parse(req.body);
-    } catch(e){
+    } catch (e) {
         res.send(400, 'no json object');
         return;
     }
-    if(!body || !body.data || !body.subscriptionIds){
+    if (!body || !body.data || !body.subscriptionIds) {
         res.send(400, 'no json object');
         return;
     }
@@ -93,9 +111,9 @@ server.put('/a', function (req, res, next) {
             data: body.data
         }
     }), body.subscriptionIds, function (err, result) {
-        if(err){
+        if (err) {
             res.send(500, err);
-        } else if(!result || result.failure === body.subscriptionIds.length){
+        } else if (!result || result.failure === body.subscriptionIds.length) {
             res.send(401, result.results);
         } else {
             res.send(200, result.results);
