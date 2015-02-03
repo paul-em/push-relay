@@ -58,7 +58,7 @@ function getRegistrationID() {
                             // here is where you might want to send it the regID for later use.
                             fulfill({
                                 registrationId: e.regid,
-                                endpoint: 'http://192.168.1.114:8080'
+                                endpoint: 'https://paulem.eu'
                             });
                         } else {
                             reject('got no real regid');
