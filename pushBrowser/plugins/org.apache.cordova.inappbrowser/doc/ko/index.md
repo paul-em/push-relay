@@ -77,10 +77,6 @@
     *   **presentationstyle**: 설정 `pagesheet` , `formsheet` 또는 `fullscreen` [프레 젠 테이 션 스타일][1] (기본값을 설정 하려면`fullscreen`).
     *   **transitionstyle**: 설정 `fliphorizontal` , `crossdissolve` 또는 `coververtical` [전환 스타일][2] (기본값을 설정 하려면`coververtical`).
     *   **toolbarposition**: 설정 `top` 또는 `bottom` (기본값은 `bottom` ). 위쪽 또는 아래쪽 창에 도구 모음을 발생 합니다.
-    
-    Windows에만 해당:
-    
-    *   **숨겨진**: 설정 `yes` 브라우저를 만들 페이지를 로드 하면, 하지만 그것을 보여주지. Loadstop 이벤트는 로드가 완료 되 면 발생 합니다. 생략 하거나 설정 `no` (기본값) 브라우저 열고 정상적으로 로드 해야 합니다.
 
  [1]: http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalPresentationStyle
  [2]: http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalTransitionStyle
@@ -92,7 +88,6 @@
 *   블랙베리 10
 *   Firefox 운영 체제
 *   iOS
-*   윈도우 8과 8.1
 *   Windows Phone 7과 8
 
 ### 예를 들어
@@ -177,7 +172,6 @@
 *   아마존 화재 운영 체제
 *   안 드 로이드
 *   iOS
-*   윈도우 8과 8.1
 *   Windows Phone 7과 8
 
 ### 빠른 예제
@@ -209,7 +203,6 @@
 *   아마존 화재 운영 체제
 *   안 드 로이드
 *   iOS
-*   윈도우 8과 8.1
 *   Windows Phone 7과 8
 
 ### 빠른 예제
@@ -235,7 +228,6 @@
 *   안 드 로이드
 *   Firefox 운영 체제
 *   iOS
-*   윈도우 8과 8.1
 *   Windows Phone 7과 8
 
 ### 빠른 예제
@@ -258,7 +250,6 @@
 *   아마존 화재 운영 체제
 *   안 드 로이드
 *   iOS
-*   윈도우 8과 8.1
 
 ### 빠른 예제
 
@@ -290,7 +281,6 @@
 *   아마존 화재 운영 체제
 *   안 드 로이드
 *   iOS
-*   윈도우 8과 8.1
 
 ### 빠른 예제
 

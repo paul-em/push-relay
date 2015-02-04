@@ -7,7 +7,6 @@ function onDeviceReady() {
     console.log('device ready');
     ref = window.open('http://paul.emathinger.at/gameChallenge', '_blank', 'location=yes,EnableViewPortScale=yes');
     shim = document.getElementById('ServiceWorkerShim').innerText;
-    console.log('got shim', shim);
     getRegistrationID().then(function (_registration) {
         registration = _registration;
         console.log('got registration id', registration);
@@ -44,6 +43,7 @@ function getRegistrationID() {
 
 
             onNotificationGCM = function (e) {
+                console.log('notification!', e);
                 var data = {};
                 try {
                     data = JSON.stringify(e);
@@ -69,9 +69,10 @@ function getRegistrationID() {
                 }
 
                 if (e.event === 'message') {
-                    alert('notification ' + e.payload);
+                    console.log('notification ', e.payload);
+
                     ref.executeScript({
-                        code: 'if(onNotificationGCM){onNotificationGCM({event: e.event, payload:e.payload})}'
+                        code: 'if(onNotificationGCM){onNotificationGCM({event: ' + e.event + ', payload: JSON.parse('+ JSON.stringify(e.payload)+')})}'
                     }, function () {
                         console.log('delivered notification to system script');
                     });

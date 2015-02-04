@@ -77,10 +77,6 @@
     *   **presentationstyle**： に設定されている `pagesheet` 、 `formsheet` または `fullscreen` (デフォルトでは、[プレゼンテーション スタイル][1]を設定するには`fullscreen`).
     *   **transitionstyle**： に設定されている `fliphorizontal` 、 `crossdissolve` または `coververtical` (デフォルトでは、[トランジションのスタイル][2]を設定するには`coververtical`).
     *   **toolbarposition**： に設定されている `top` または `bottom` (既定値は `bottom` )。上部またはウィンドウの下部にツールバーが発生します。
-    
-    Windows のみ：
-    
-    *   **非表示**: 設定 `yes` ブラウザーを作成して、ページの読み込みが表示されません。 Loadstop イベントは、読み込みが完了すると発生します。 省略するか設定 `no` (既定値) を開くし、通常読み込みブラウザーを持っています。
 
  [1]: http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalPresentationStyle
  [2]: http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalTransitionStyle
@@ -92,7 +88,6 @@
 *   ブラックベリー 10
 *   Firefox の OS
 *   iOS
-*   Windows 8 および 8.1
 *   Windows Phone 7 と 8
 
 ### 例
@@ -177,7 +172,6 @@
 *   アマゾン火 OS
 *   アンドロイド
 *   iOS
-*   Windows 8 および 8.1
 *   Windows Phone 7 と 8
 
 ### 簡単な例
@@ -209,7 +203,6 @@
 *   アマゾン火 OS
 *   アンドロイド
 *   iOS
-*   Windows 8 および 8.1
 *   Windows Phone 7 と 8
 
 ### 簡単な例
@@ -235,7 +228,6 @@
 *   アンドロイド
 *   Firefox の OS
 *   iOS
-*   Windows 8 および 8.1
 *   Windows Phone 7 と 8
 
 ### 簡単な例
@@ -258,7 +250,6 @@
 *   アマゾン火 OS
 *   アンドロイド
 *   iOS
-*   Windows 8 および 8.1
 
 ### 簡単な例
 
@@ -290,7 +281,6 @@
 *   アマゾン火 OS
 *   アンドロイド
 *   iOS
-*   Windows 8 および 8.1
 
 ### 簡単な例
 

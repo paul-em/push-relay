@@ -12,9 +12,9 @@ var gcm = require('node-gcm');
 /**
  * load config
  */
-if (!argv.cert || !argv.key || !argv.apikey) {
-    //throw new Error('Missing arguments! Be sure to add --cert, --key and --apikey parameters with associating file paths.');
-}
+
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; // Avoids DEPTH_ZERO_SELF_SIGNED_CERT error for self-signed certs
+
 try {
     var certPath = argv.cert || 'server.crt';
     var cert = fs.readFileSync(certPath, {encoding: 'utf8'});
@@ -76,10 +76,15 @@ console.log('server listening on port', port);
  * PUT route for single recipients
  */
 server.put('/p/:id', function (req, res, next) {
+    var body;
+    try {
+        body = JSON.parse(req.body);
+    } catch (e) {
+        body =  {data: req.body};
+    }
+    console.log(body);
     sender.sendNoRetry(new gcm.Message({
-        data: {
-            data: req.body
-        }
+        data: body
     }), [req.params.id], function (err, result) {
         if (err) {
             res.send(500, err);
