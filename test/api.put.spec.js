@@ -3,7 +3,7 @@ var expect = require("expect.js");
 var request = require('request');
 var nock = require('nock');
 var helper = require('./helper');
-helper.setProcessArgs('--cert ./test/ssl/test.crt --key ./test/ssl/test.key --apikey ./test/apikey/apikey.txt');
+helper.setProcessArgs('--cert ./test/ssl/test.crt --key ./test/ssl/test.key --senderId AIzaSyBNHRBzCKW9oUtTItl9qmLEVmRgG4SBys4');
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; // Avoids DEPTH_ZERO_SELF_SIGNED_CERT error for self-signed certs
 
 
