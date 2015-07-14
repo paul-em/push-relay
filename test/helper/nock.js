@@ -35,7 +35,11 @@ nock('https://android.googleapis.com:443')
 
 nock('https://android.googleapis.com:443')
     .post('/gcm/send', function (body) {
-        return body.data === 'TTL';
+        if(!body.time_to_live){
+            return false;
+        }
+        var ttl = parseInt(body.time_to_live);
+        return isNaN(ttl) || ttl < 0;
     })
     .reply(200, {
         multicast_id: 5201523458607294000,
