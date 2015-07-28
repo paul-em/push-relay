@@ -5,7 +5,7 @@ var shim;
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     console.log('device ready');
-    ref = window.open('http://paul.emathinger.at/gameChallenge', '_blank', 'location=yes,EnableViewPortScale=yes');
+    ref = window.open('https://paulem.eu/~/gamechallenge', '_blank', 'location=yes,EnableViewPortScale=yes');
     shim = document.getElementById('ServiceWorkerShim').innerText;
     getRegistrationID().then(function (_registration) {
         registration = _registration;
@@ -13,6 +13,15 @@ function onDeviceReady() {
         injectJs();
         ref.addEventListener('loadstop', function () {
             injectJs();
+        });
+
+        ref.addEventListener('loadstart', function () {
+            console.log('loadStart event');
+            injectJs();
+        });
+
+        ref.addEventListener('error', function (e) {
+            console.log('error', e);
         });
     });
 }
