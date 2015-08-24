@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>PushBrowser</title>
-    </head>
-    <body>
-        <div class="app">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>PushBrowser</title>
+</head>
+<body>
+<div class="app">
 
-        </div>
-        <script src="cordova.js"></script>
-        <script src="cordova_plugins.js"></script>
-        <script type="text/plain" id="ServiceWorkerShim">
-            (function (navigator) {
-                var PushManager = function () {
-                };
+</div>
+<script src="cordova.js"></script>
+<script src="cordova_plugins.js"></script>
+<script type="text/plain" id="ServiceWorkerShim">
+(function (navigator) {
+  var PushManager = function () {
+  };
 
-                PushManager.prototype.register = function () {
-                    return new Promise(function (fulfill, reject) {
-                        if(navigator.dummyServiceWorkerRegistrationId && navigator.dummyServiceWorkerEndpoint) {
-                            if(localStorage.pushConfirmed === '1' || confirm('do you want to use push notifications for this website?')){
-                                localStorage.pushConfirmed = '1';
-                                fulfill({
-                                    registrationId: navigator.dummyServiceWorkerRegistrationId,
-                                    endpoint: navigator.dummyServiceWorkerEndpoint
-                                })
-                            } else {
-                                reject('permission not granted');
-                            }
-                        } else {
-                            reject('could not find registrationId or endpoint')
-                        }
-                    });
-                };
+  PushManager.prototype.register = function () {
+    return new Promise(function (fulfill, reject) {
+      if (navigator.dummyServiceWorkerRegistrationId && navigator.dummyServiceWorkerEndpoint) {
+        if (localStorage.pushConfirmed === '1' || confirm('do you want to use push notifications for this website?')) {
+          localStorage.pushConfirmed = '1';
+          fulfill({
+            registrationId: navigator.dummyServiceWorkerRegistrationId,
+            endpoint: navigator.dummyServiceWorkerEndpoint
+          })
+        } else {
+          reject('permission not granted');
+        }
+      } else {
+        reject('could not find registrationId or endpoint')
+      }
+    });
+  };
 
-                var ServiceWorkerRegistration = function () {
-                    this.pushManager = new PushManager();
-                };
+  var ServiceWorkerRegistration = function () {
+    this.pushManager = new PushManager();
+  };
 
-                // we do not really operate in a context of serviceWorkers here, this is just a shim to try out the future API usage
-                var ServiceWorker = function () {
-                    var self = this;
-                    this.serviceWorkerRegistration = new ServiceWorkerRegistration();
-                    this.ready = new Promise(function (fulfill, reject) {
-                        fulfill(self.serviceWorkerRegistration);
-                    })
-                };
+  // we do not really operate in a context of serviceWorkers here, this is just a shim to try out the future API usage
+  var ServiceWorker = function () {
+    var self = this;
+    this.serviceWorkerRegistration = new ServiceWorkerRegistration();
+    this.ready = new Promise(function (fulfill, reject) {
+      fulfill(self.serviceWorkerRegistration);
+    })
+  };
 
-                ServiceWorker.prototype.register = function (path) {
-                    var self = this;
-                    return new Promise(function (fulfill, reject) {
-                        fulfill(self.serviceWorkerRegistration);
-                    });
-                };
+  ServiceWorker.prototype.register = function (path) {
+    var self = this;
+    return new Promise(function (fulfill, reject) {
+      fulfill(self.serviceWorkerRegistration);
+    });
+  };
 
 
-                navigator.dummyServiceWorker = new ServiceWorker();
+  navigator.dummyServiceWorker = new ServiceWorker();
 
-                if(navigator.dummyServiceWorkerListener && typeof navigator.dummyServiceWorkerListener === 'function'){
-                    console.log('found server worker listener');
-                    navigator.dummyServiceWorkerListener();
-                } else {
-                    console.log('no service worker listener');
-                }
-        })(window.navigator);
-        </script>
-        <script src="js/index.js"></script>
-    </body>
+  if (navigator.dummyServiceWorkerListener && typeof navigator.dummyServiceWorkerListener === 'function') {
+    console.log('found server worker listener');
+    navigator.dummyServiceWorkerListener();
+  } else {
+    console.log('no service worker listener');
+  }
+})(window.navigator);
+</script>
+<script src="js/index.js"></script>
+</body>
 </html>
