@@ -25,7 +25,8 @@
   },
   "dependencies": {
     "minimist": "^1.1.0",
-    "node-gcm": "^0.9.14",
+    "pem": "^1.7.2",
+    "request": "^2.55.0",
     "restify": "^2.8.5"
   }
 }
