@@ -1,0 +1,1776 @@
+[
+  {
+    "concurrency": 1,
+    "gcm": {
+      "totalRequests": 100,
+      "totalErrors": 0,
+      "totalTimeSeconds": 15.821696147,
+      "rps": 6,
+      "meanLatencyMs": 160,
+      "maxLatencyMs": 360,
+      "percentiles": {
+        "50": 144,
+        "90": 178,
+        "95": 268,
+        "99": 360
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 100,
+      "totalErrors": 0,
+      "totalTimeSeconds": 21.922667132999997,
+      "rps": 5,
+      "meanLatencyMs": 220,
+      "maxLatencyMs": 617,
+      "percentiles": {
+        "50": 209,
+        "90": 224,
+        "95": 275,
+        "99": 617
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 2,
+    "gcm": {
+      "totalRequests": 200,
+      "totalErrors": 0,
+      "totalTimeSeconds": 18.707445986,
+      "rps": 11,
+      "meanLatencyMs": 190,
+      "maxLatencyMs": 3573,
+      "percentiles": {
+        "50": 145,
+        "90": 172,
+        "95": 200,
+        "99": 3286
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 200,
+      "totalErrors": 0,
+      "totalTimeSeconds": 22.631101308,
+      "rps": 9,
+      "meanLatencyMs": 220,
+      "maxLatencyMs": 610,
+      "percentiles": {
+        "50": 212,
+        "90": 238,
+        "95": 289,
+        "99": 596
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 3,
+    "gcm": {
+      "totalRequests": 300,
+      "totalErrors": 0,
+      "totalTimeSeconds": 24.120701922,
+      "rps": 12,
+      "meanLatencyMs": 210,
+      "maxLatencyMs": 9272,
+      "percentiles": {
+        "50": 144,
+        "90": 169,
+        "95": 209,
+        "99": 2377
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 300,
+      "totalErrors": 0,
+      "totalTimeSeconds": 22.566615718,
+      "rps": 13,
+      "meanLatencyMs": 230,
+      "maxLatencyMs": 1347,
+      "percentiles": {
+        "50": 212,
+        "90": 249,
+        "95": 294,
+        "99": 359
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 4,
+    "gcm": {
+      "totalRequests": 400,
+      "totalErrors": 0,
+      "totalTimeSeconds": 16.581941473,
+      "rps": 24,
+      "meanLatencyMs": 170,
+      "maxLatencyMs": 3276,
+      "percentiles": {
+        "50": 146,
+        "90": 178,
+        "95": 240,
+        "99": 324
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 400,
+      "totalErrors": 0,
+      "totalTimeSeconds": 23.03994878,
+      "rps": 17,
+      "meanLatencyMs": 230,
+      "maxLatencyMs": 1354,
+      "percentiles": {
+        "50": 212,
+        "90": 239,
+        "95": 284,
+        "99": 603
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 5,
+    "gcm": {
+      "totalRequests": 500,
+      "totalErrors": 0,
+      "totalTimeSeconds": 18.432266771,
+      "rps": 27,
+      "meanLatencyMs": 160,
+      "maxLatencyMs": 3284,
+      "percentiles": {
+        "50": 147,
+        "90": 172,
+        "95": 221,
+        "99": 385
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 500,
+      "totalErrors": 1,
+      "totalTimeSeconds": 23.278117096000003,
+      "rps": 21,
+      "meanLatencyMs": 230,
+      "maxLatencyMs": 1333,
+      "percentiles": {
+        "50": 216,
+        "90": 263,
+        "95": 320,
+        "99": 602
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    }
+  },
+  {
+    "concurrency": 6,
+    "gcm": {
+      "totalRequests": 600,
+      "totalErrors": 0,
+      "totalTimeSeconds": 17.475407561,
+      "rps": 34,
+      "meanLatencyMs": 170,
+      "maxLatencyMs": 3282,
+      "percentiles": {
+        "50": 150,
+        "90": 183,
+        "95": 252,
+        "99": 588
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 600,
+      "totalErrors": 0,
+      "totalTimeSeconds": 25.038680597,
+      "rps": 24,
+      "meanLatencyMs": 250,
+      "maxLatencyMs": 7349,
+      "percentiles": {
+        "50": 220,
+        "90": 255,
+        "95": 310,
+        "99": 660
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 7,
+    "gcm": {
+      "totalRequests": 700,
+      "totalErrors": 0,
+      "totalTimeSeconds": 18.543421809999998,
+      "rps": 38,
+      "meanLatencyMs": 180,
+      "maxLatencyMs": 6288,
+      "percentiles": {
+        "50": 153,
+        "90": 216,
+        "95": 256,
+        "99": 569
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 700,
+      "totalErrors": 0,
+      "totalTimeSeconds": 23.426690708,
+      "rps": 30,
+      "meanLatencyMs": 230,
+      "maxLatencyMs": 843,
+      "percentiles": {
+        "50": 224,
+        "90": 256,
+        "95": 287,
+        "99": 423
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 8,
+    "gcm": {
+      "totalRequests": 800,
+      "totalErrors": 0,
+      "totalTimeSeconds": 16.935351834000002,
+      "rps": 47,
+      "meanLatencyMs": 170,
+      "maxLatencyMs": 588,
+      "percentiles": {
+        "50": 157,
+        "90": 188,
+        "95": 262,
+        "99": 294
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 800,
+      "totalErrors": 0,
+      "totalTimeSeconds": 25.5110772,
+      "rps": 31,
+      "meanLatencyMs": 250,
+      "maxLatencyMs": 7367,
+      "percentiles": {
+        "50": 232,
+        "90": 273,
+        "95": 300,
+        "99": 625
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 9,
+    "gcm": {
+      "totalRequests": 900,
+      "totalErrors": 0,
+      "totalTimeSeconds": 18.479254396,
+      "rps": 49,
+      "meanLatencyMs": 180,
+      "maxLatencyMs": 3295,
+      "percentiles": {
+        "50": 163,
+        "90": 215,
+        "95": 278,
+        "99": 568
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 900,
+      "totalErrors": 0,
+      "totalTimeSeconds": 25.229534902,
+      "rps": 36,
+      "meanLatencyMs": 250,
+      "maxLatencyMs": 7397,
+      "percentiles": {
+        "50": 232,
+        "90": 270,
+        "95": 294,
+        "99": 391
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 10,
+    "gcm": {
+      "totalRequests": 1000,
+      "totalErrors": 0,
+      "totalTimeSeconds": 19.692233952,
+      "rps": 51,
+      "meanLatencyMs": 190,
+      "maxLatencyMs": 6274,
+      "percentiles": {
+        "50": 168,
+        "90": 206,
+        "95": 281,
+        "99": 309
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 1000,
+      "totalErrors": 0,
+      "totalTimeSeconds": 26.068671947,
+      "rps": 38,
+      "meanLatencyMs": 260,
+      "maxLatencyMs": 3407,
+      "percentiles": {
+        "50": 243,
+        "90": 300,
+        "95": 334,
+        "99": 588
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 11,
+    "gcm": {
+      "totalRequests": 1100,
+      "totalErrors": 0,
+      "totalTimeSeconds": 20.712361065,
+      "rps": 53,
+      "meanLatencyMs": 200,
+      "maxLatencyMs": 3296,
+      "percentiles": {
+        "50": 179,
+        "90": 224,
+        "95": 296,
+        "99": 339
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 1100,
+      "totalErrors": 1,
+      "totalTimeSeconds": 27.617033881,
+      "rps": 40,
+      "meanLatencyMs": 270,
+      "maxLatencyMs": 3676,
+      "percentiles": {
+        "50": 254,
+        "90": 309,
+        "95": 349,
+        "99": 532
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    }
+  },
+  {
+    "concurrency": 12,
+    "gcm": {
+      "totalRequests": 1200,
+      "totalErrors": 2,
+      "totalTimeSeconds": 20.036681638999998,
+      "rps": 60,
+      "meanLatencyMs": 200,
+      "maxLatencyMs": 3295,
+      "percentiles": {
+        "50": 178,
+        "90": 225,
+        "95": 293,
+        "99": 569
+      },
+      "errorCodes": {
+        "502": 2
+      }
+    },
+    "relay": {
+      "totalRequests": 1200,
+      "totalErrors": 3,
+      "totalTimeSeconds": 30.855545415,
+      "rps": 39,
+      "meanLatencyMs": 310,
+      "maxLatencyMs": 21004,
+      "percentiles": {
+        "50": 246,
+        "90": 298,
+        "95": 328,
+        "99": 627
+      },
+      "errorCodes": {
+        "-1": 3
+      }
+    }
+  },
+  {
+    "concurrency": 13,
+    "gcm": {
+      "totalRequests": 1300,
+      "totalErrors": 0,
+      "totalTimeSeconds": 22.168945003,
+      "rps": 59,
+      "meanLatencyMs": 220,
+      "maxLatencyMs": 3364,
+      "percentiles": {
+        "50": 201,
+        "90": 271,
+        "95": 322,
+        "99": 602
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 1300,
+      "totalErrors": 0,
+      "totalTimeSeconds": 28.481737799999998,
+      "rps": 46,
+      "meanLatencyMs": 280,
+      "maxLatencyMs": 1112,
+      "percentiles": {
+        "50": 281,
+        "90": 340,
+        "95": 371,
+        "99": 466
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 14,
+    "gcm": {
+      "totalRequests": 1400,
+      "totalErrors": 0,
+      "totalTimeSeconds": 23.919959979999998,
+      "rps": 59,
+      "meanLatencyMs": 240,
+      "maxLatencyMs": 3340,
+      "percentiles": {
+        "50": 212,
+        "90": 259,
+        "95": 337,
+        "99": 642
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 1400,
+      "totalErrors": 1,
+      "totalTimeSeconds": 29.774106658,
+      "rps": 47,
+      "meanLatencyMs": 300,
+      "maxLatencyMs": 3453,
+      "percentiles": {
+        "50": 292,
+        "90": 346,
+        "95": 370,
+        "99": 492
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    }
+  },
+  {
+    "concurrency": 15,
+    "gcm": {
+      "totalRequests": 1500,
+      "totalErrors": 1,
+      "totalTimeSeconds": 24.714952034000003,
+      "rps": 61,
+      "meanLatencyMs": 250,
+      "maxLatencyMs": 3368,
+      "percentiles": {
+        "50": 227,
+        "90": 289,
+        "95": 355,
+        "99": 654
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    },
+    "relay": {
+      "totalRequests": 1500,
+      "totalErrors": 3,
+      "totalTimeSeconds": 31.014060447,
+      "rps": 48,
+      "meanLatencyMs": 310,
+      "maxLatencyMs": 5575,
+      "percentiles": {
+        "50": 295,
+        "90": 358,
+        "95": 385,
+        "99": 703
+      },
+      "errorCodes": {
+        "502": 3
+      }
+    }
+  },
+  {
+    "concurrency": 16,
+    "gcm": {
+      "totalRequests": 1600,
+      "totalErrors": 0,
+      "totalTimeSeconds": 29.568293216999997,
+      "rps": 54,
+      "meanLatencyMs": 290,
+      "maxLatencyMs": 9640,
+      "percentiles": {
+        "50": 225,
+        "90": 314,
+        "95": 364,
+        "99": 3317
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 1600,
+      "totalErrors": 2,
+      "totalTimeSeconds": 34.319967534,
+      "rps": 47,
+      "meanLatencyMs": 330,
+      "maxLatencyMs": 3335,
+      "percentiles": {
+        "50": 311,
+        "90": 387,
+        "95": 426,
+        "99": 713
+      },
+      "errorCodes": {
+        "502": 2
+      }
+    }
+  },
+  {
+    "concurrency": 17,
+    "gcm": {
+      "totalRequests": 1700,
+      "totalErrors": 2,
+      "totalTimeSeconds": 30.227883678999998,
+      "rps": 56,
+      "meanLatencyMs": 290,
+      "maxLatencyMs": 3397,
+      "percentiles": {
+        "50": 249,
+        "90": 305,
+        "95": 388,
+        "99": 3235
+      },
+      "errorCodes": {
+        "502": 2
+      }
+    },
+    "relay": {
+      "totalRequests": 1700,
+      "totalErrors": 0,
+      "totalTimeSeconds": 33.834005605,
+      "rps": 50,
+      "meanLatencyMs": 330,
+      "maxLatencyMs": 3443,
+      "percentiles": {
+        "50": 321,
+        "90": 392,
+        "95": 435,
+        "99": 617
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 18,
+    "gcm": {
+      "totalRequests": 1800,
+      "totalErrors": 0,
+      "totalTimeSeconds": 31.615980824999998,
+      "rps": 57,
+      "meanLatencyMs": 310,
+      "maxLatencyMs": 23366,
+      "percentiles": {
+        "50": 258,
+        "90": 313,
+        "95": 364,
+        "99": 734
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 1800,
+      "totalErrors": 0,
+      "totalTimeSeconds": 34.30988037,
+      "rps": 52,
+      "meanLatencyMs": 340,
+      "maxLatencyMs": 1813,
+      "percentiles": {
+        "50": 337,
+        "90": 407,
+        "95": 431,
+        "99": 676
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 19,
+    "gcm": {
+      "totalRequests": 1900,
+      "totalErrors": 0,
+      "totalTimeSeconds": 31.988634389999998,
+      "rps": 59,
+      "meanLatencyMs": 320,
+      "maxLatencyMs": 9676,
+      "percentiles": {
+        "50": 286,
+        "90": 340,
+        "95": 379,
+        "99": 818
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 1900,
+      "totalErrors": 1,
+      "totalTimeSeconds": 37.805961895,
+      "rps": 50,
+      "meanLatencyMs": 370,
+      "maxLatencyMs": 4745,
+      "percentiles": {
+        "50": 361,
+        "90": 436,
+        "95": 463,
+        "99": 713
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    }
+  },
+  {
+    "concurrency": 20,
+    "gcm": {
+      "totalRequests": 2000,
+      "totalErrors": 0,
+      "totalTimeSeconds": 32.492060207,
+      "rps": 62,
+      "meanLatencyMs": 320,
+      "maxLatencyMs": 6445,
+      "percentiles": {
+        "50": 305,
+        "90": 361,
+        "95": 400,
+        "99": 764
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 2000,
+      "totalErrors": 2,
+      "totalTimeSeconds": 38.107832064,
+      "rps": 52,
+      "meanLatencyMs": 380,
+      "maxLatencyMs": 3511,
+      "percentiles": {
+        "50": 384,
+        "90": 459,
+        "95": 497,
+        "99": 714
+      },
+      "errorCodes": {
+        "502": 2
+      }
+    }
+  },
+  {
+    "concurrency": 21,
+    "gcm": {
+      "totalRequests": 2100,
+      "totalErrors": 0,
+      "totalTimeSeconds": 36.253223109,
+      "rps": 58,
+      "meanLatencyMs": 350,
+      "maxLatencyMs": 6456,
+      "percentiles": {
+        "50": 315,
+        "90": 398,
+        "95": 453,
+        "99": 1330
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 2100,
+      "totalErrors": 1,
+      "totalTimeSeconds": 41.109907795,
+      "rps": 51,
+      "meanLatencyMs": 400,
+      "maxLatencyMs": 3341,
+      "percentiles": {
+        "50": 399,
+        "90": 494,
+        "95": 519,
+        "99": 771
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    }
+  },
+  {
+    "concurrency": 22,
+    "gcm": {
+      "totalRequests": 2200,
+      "totalErrors": 0,
+      "totalTimeSeconds": 36.094863265,
+      "rps": 61,
+      "meanLatencyMs": 360,
+      "maxLatencyMs": 12477,
+      "percentiles": {
+        "50": 306,
+        "90": 384,
+        "95": 458,
+        "99": 1573
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 2200,
+      "totalErrors": 0,
+      "totalTimeSeconds": 44.366962548000004,
+      "rps": 50,
+      "meanLatencyMs": 400,
+      "maxLatencyMs": 3461,
+      "percentiles": {
+        "50": 374,
+        "90": 472,
+        "95": 511,
+        "99": 1771
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 23,
+    "gcm": {
+      "totalRequests": 2300,
+      "totalErrors": 1,
+      "totalTimeSeconds": 38.571601822999995,
+      "rps": 60,
+      "meanLatencyMs": 380,
+      "maxLatencyMs": 6481,
+      "percentiles": {
+        "50": 346,
+        "90": 410,
+        "95": 482,
+        "99": 1196
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    },
+    "relay": {
+      "totalRequests": 2300,
+      "totalErrors": 1,
+      "totalTimeSeconds": 43.160803836,
+      "rps": 53,
+      "meanLatencyMs": 430,
+      "maxLatencyMs": 3585,
+      "percentiles": {
+        "50": 417,
+        "90": 499,
+        "95": 548,
+        "99": 873
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    }
+  },
+  {
+    "concurrency": 24,
+    "gcm": {
+      "totalRequests": 2400,
+      "totalErrors": 0,
+      "totalTimeSeconds": 39.737133529,
+      "rps": 60,
+      "meanLatencyMs": 390,
+      "maxLatencyMs": 3641,
+      "percentiles": {
+        "50": 341,
+        "90": 420,
+        "95": 609,
+        "99": 3311
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 2400,
+      "totalErrors": 5,
+      "totalTimeSeconds": 47.427502772,
+      "rps": 51,
+      "meanLatencyMs": 440,
+      "maxLatencyMs": 3885,
+      "percentiles": {
+        "50": 417,
+        "90": 539,
+        "95": 709,
+        "99": 1621
+      },
+      "errorCodes": {
+        "502": 5
+      }
+    }
+  },
+  {
+    "concurrency": 25,
+    "gcm": {
+      "totalRequests": 2500,
+      "totalErrors": 0,
+      "totalTimeSeconds": 46.073816524,
+      "rps": 54,
+      "meanLatencyMs": 450,
+      "maxLatencyMs": 4007,
+      "percentiles": {
+        "50": 380,
+        "90": 513,
+        "95": 713,
+        "99": 3374
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 2500,
+      "totalErrors": 7,
+      "totalTimeSeconds": 52.812187034000004,
+      "rps": 47,
+      "meanLatencyMs": 530,
+      "maxLatencyMs": 21014,
+      "percentiles": {
+        "50": 437,
+        "90": 588,
+        "95": 790,
+        "99": 3417
+      },
+      "errorCodes": {
+        "502": 4,
+        "-1": 3
+      }
+    }
+  },
+  {
+    "concurrency": 26,
+    "gcm": {
+      "totalRequests": 2600,
+      "totalErrors": 0,
+      "totalTimeSeconds": 49.556438233,
+      "rps": 52,
+      "meanLatencyMs": 490,
+      "maxLatencyMs": 9447,
+      "percentiles": {
+        "50": 397,
+        "90": 605,
+        "95": 776,
+        "99": 3412
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 2600,
+      "totalErrors": 4,
+      "totalTimeSeconds": 53.996488172999996,
+      "rps": 48,
+      "meanLatencyMs": 540,
+      "maxLatencyMs": 6300,
+      "percentiles": {
+        "50": 458,
+        "90": 659,
+        "95": 850,
+        "99": 3468
+      },
+      "errorCodes": {
+        "502": 4
+      }
+    }
+  },
+  {
+    "concurrency": 27,
+    "gcm": {
+      "totalRequests": 2700,
+      "totalErrors": 0,
+      "totalTimeSeconds": 44.939388752,
+      "rps": 60,
+      "meanLatencyMs": 450,
+      "maxLatencyMs": 12540,
+      "percentiles": {
+        "50": 390,
+        "90": 487,
+        "95": 636,
+        "99": 3346
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 2700,
+      "totalErrors": 5,
+      "totalTimeSeconds": 50.589649511000005,
+      "rps": 53,
+      "meanLatencyMs": 500,
+      "maxLatencyMs": 6491,
+      "percentiles": {
+        "50": 471,
+        "90": 604,
+        "95": 749,
+        "99": 1686
+      },
+      "errorCodes": {
+        "502": 5
+      }
+    }
+  },
+  {
+    "concurrency": 28,
+    "gcm": {
+      "totalRequests": 2800,
+      "totalErrors": 2,
+      "totalTimeSeconds": 44.290322685999996,
+      "rps": 63,
+      "meanLatencyMs": 440,
+      "maxLatencyMs": 4399,
+      "percentiles": {
+        "50": 379,
+        "90": 471,
+        "95": 681,
+        "99": 3364
+      },
+      "errorCodes": {
+        "502": 2
+      }
+    },
+    "relay": {
+      "totalRequests": 2800,
+      "totalErrors": 11,
+      "totalTimeSeconds": 53.533645432,
+      "rps": 52,
+      "meanLatencyMs": 500,
+      "maxLatencyMs": 21017,
+      "percentiles": {
+        "50": 434,
+        "90": 568,
+        "95": 744,
+        "99": 3398
+      },
+      "errorCodes": {
+        "502": 8,
+        "-1": 3
+      }
+    }
+  },
+  {
+    "concurrency": 29,
+    "gcm": {
+      "totalRequests": 2900,
+      "totalErrors": 0,
+      "totalTimeSeconds": 48.090245422,
+      "rps": 60,
+      "meanLatencyMs": 480,
+      "maxLatencyMs": 9416,
+      "percentiles": {
+        "50": 420,
+        "90": 559,
+        "95": 716,
+        "99": 3324
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 2900,
+      "totalErrors": 5,
+      "totalTimeSeconds": 53.672741134000006,
+      "rps": 54,
+      "meanLatencyMs": 530,
+      "maxLatencyMs": 21015,
+      "percentiles": {
+        "50": 481,
+        "90": 620,
+        "95": 760,
+        "99": 3398
+      },
+      "errorCodes": {
+        "502": 4,
+        "-1": 1
+      }
+    }
+  },
+  {
+    "concurrency": 30,
+    "gcm": {
+      "totalRequests": 3000,
+      "totalErrors": 0,
+      "totalTimeSeconds": 45.597344000999996,
+      "rps": 66,
+      "meanLatencyMs": 450,
+      "maxLatencyMs": 3827,
+      "percentiles": {
+        "50": 397,
+        "90": 490,
+        "95": 709,
+        "99": 3289
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 3000,
+      "totalErrors": 0,
+      "totalTimeSeconds": 57.558817359,
+      "rps": 52,
+      "meanLatencyMs": 460,
+      "maxLatencyMs": 11948,
+      "percentiles": {
+        "50": 439,
+        "90": 553,
+        "95": 719,
+        "99": 2037
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 31,
+    "gcm": {
+      "totalRequests": 3100,
+      "totalErrors": 0,
+      "totalTimeSeconds": 49.202621431,
+      "rps": 63,
+      "meanLatencyMs": 490,
+      "maxLatencyMs": 6487,
+      "percentiles": {
+        "50": 413,
+        "90": 561,
+        "95": 757,
+        "99": 3405
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 3100,
+      "totalErrors": 5,
+      "totalTimeSeconds": 60.23246991,
+      "rps": 51,
+      "meanLatencyMs": 540,
+      "maxLatencyMs": 21073,
+      "percentiles": {
+        "50": 465,
+        "90": 604,
+        "95": 812,
+        "99": 3446
+      },
+      "errorCodes": {
+        "-1": 5
+      }
+    }
+  },
+  {
+    "concurrency": 32,
+    "gcm": {
+      "totalRequests": 3200,
+      "totalErrors": 0,
+      "totalTimeSeconds": 52.164576772000004,
+      "rps": 61,
+      "meanLatencyMs": 520,
+      "maxLatencyMs": 12593,
+      "percentiles": {
+        "50": 449,
+        "90": 591,
+        "95": 752,
+        "99": 3413
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 3200,
+      "totalErrors": 0,
+      "totalTimeSeconds": 58.95667939,
+      "rps": 54,
+      "meanLatencyMs": 590,
+      "maxLatencyMs": 9543,
+      "percentiles": {
+        "50": 522,
+        "90": 702,
+        "95": 874,
+        "99": 3480
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 33,
+    "gcm": {
+      "totalRequests": 3300,
+      "totalErrors": 0,
+      "totalTimeSeconds": 51.990511415,
+      "rps": 63,
+      "meanLatencyMs": 520,
+      "maxLatencyMs": 9574,
+      "percentiles": {
+        "50": 452,
+        "90": 639,
+        "95": 798,
+        "99": 3365
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 3300,
+      "totalErrors": 4,
+      "totalTimeSeconds": 67.631688801,
+      "rps": 49,
+      "meanLatencyMs": 550,
+      "maxLatencyMs": 21070,
+      "percentiles": {
+        "50": 494,
+        "90": 651,
+        "95": 819,
+        "99": 3423
+      },
+      "errorCodes": {
+        "502": 1,
+        "-1": 3
+      }
+    }
+  },
+  {
+    "concurrency": 34,
+    "gcm": {
+      "totalRequests": 3400,
+      "totalErrors": 4,
+      "totalTimeSeconds": 60.656855391,
+      "rps": 56,
+      "meanLatencyMs": 600,
+      "maxLatencyMs": 5833,
+      "percentiles": {
+        "50": 556,
+        "90": 707,
+        "95": 814,
+        "99": 2014
+      },
+      "errorCodes": {
+        "502": 4
+      }
+    },
+    "relay": {
+      "totalRequests": 3400,
+      "totalErrors": 4,
+      "totalTimeSeconds": 68.843941688,
+      "rps": 49,
+      "meanLatencyMs": 640,
+      "maxLatencyMs": 7811,
+      "percentiles": {
+        "50": 608,
+        "90": 803,
+        "95": 900,
+        "99": 2108
+      },
+      "errorCodes": {
+        "502": 4
+      }
+    }
+  },
+  {
+    "concurrency": 35,
+    "gcm": {
+      "totalRequests": 3500,
+      "totalErrors": 1,
+      "totalTimeSeconds": 60.444591831,
+      "rps": 58,
+      "meanLatencyMs": 600,
+      "maxLatencyMs": 21002,
+      "percentiles": {
+        "50": 529,
+        "90": 694,
+        "95": 864,
+        "99": 3460
+      },
+      "errorCodes": {
+        "-1": 1
+      }
+    },
+    "relay": {
+      "totalRequests": 3500,
+      "totalErrors": 6,
+      "totalTimeSeconds": 67.15969330499999,
+      "rps": 52,
+      "meanLatencyMs": 640,
+      "maxLatencyMs": 21035,
+      "percentiles": {
+        "50": 589,
+        "90": 784,
+        "95": 921,
+        "99": 3429
+      },
+      "errorCodes": {
+        "502": 5,
+        "-1": 1
+      }
+    }
+  },
+  {
+    "concurrency": 36,
+    "gcm": {
+      "totalRequests": 3600,
+      "totalErrors": 6,
+      "totalTimeSeconds": 64.457767547,
+      "rps": 56,
+      "meanLatencyMs": 640,
+      "maxLatencyMs": 21149,
+      "percentiles": {
+        "50": 575,
+        "90": 750,
+        "95": 851,
+        "99": 3455
+      },
+      "errorCodes": {
+        "502": 3,
+        "-1": 3
+      }
+    },
+    "relay": {
+      "totalRequests": 3600,
+      "totalErrors": 7,
+      "totalTimeSeconds": 69.66026458099999,
+      "rps": 52,
+      "meanLatencyMs": 690,
+      "maxLatencyMs": 21012,
+      "percentiles": {
+        "50": 636,
+        "90": 821,
+        "95": 941,
+        "99": 3511
+      },
+      "errorCodes": {
+        "502": 6,
+        "-1": 1
+      }
+    }
+  },
+  {
+    "concurrency": 37,
+    "gcm": {
+      "totalRequests": 3700,
+      "totalErrors": 40,
+      "totalTimeSeconds": 65.291118329,
+      "rps": 57,
+      "meanLatencyMs": 650,
+      "maxLatencyMs": 13314,
+      "percentiles": {
+        "50": 517,
+        "90": 743,
+        "95": 999,
+        "99": 3558
+      },
+      "errorCodes": {
+        "502": 37,
+        "-1": 3
+      }
+    },
+    "relay": {
+      "totalRequests": 3700,
+      "totalErrors": 27,
+      "totalTimeSeconds": 67.769875962,
+      "rps": 55,
+      "meanLatencyMs": 670,
+      "maxLatencyMs": 9704,
+      "percentiles": {
+        "50": 597,
+        "90": 790,
+        "95": 933,
+        "99": 3562
+      },
+      "errorCodes": {
+        "502": 27
+      }
+    }
+  },
+  {
+    "concurrency": 38,
+    "gcm": {
+      "totalRequests": 3800,
+      "totalErrors": 11,
+      "totalTimeSeconds": 73.461878364,
+      "rps": 52,
+      "meanLatencyMs": 710,
+      "maxLatencyMs": 21195,
+      "percentiles": {
+        "50": 589,
+        "90": 789,
+        "95": 1038,
+        "99": 3821
+      },
+      "errorCodes": {
+        "502": 9,
+        "-1": 2
+      }
+    },
+    "relay": {
+      "totalRequests": 3800,
+      "totalErrors": 8,
+      "totalTimeSeconds": 76.53778375499999,
+      "rps": 50,
+      "meanLatencyMs": 710,
+      "maxLatencyMs": 23678,
+      "percentiles": {
+        "50": 637,
+        "90": 823,
+        "95": 932,
+        "99": 3515
+      },
+      "errorCodes": {
+        "502": 4,
+        "-1": 4
+      }
+    }
+  },
+  {
+    "concurrency": 39,
+    "gcm": {
+      "totalRequests": 3900,
+      "totalErrors": 9,
+      "totalTimeSeconds": 71.459471731,
+      "rps": 55,
+      "meanLatencyMs": 650,
+      "maxLatencyMs": 15429,
+      "percentiles": {
+        "50": 529,
+        "90": 834,
+        "95": 938,
+        "99": 3570
+      },
+      "errorCodes": {
+        "502": 8,
+        "-1": 1
+      }
+    },
+    "relay": {
+      "totalRequests": 3900,
+      "totalErrors": 6,
+      "totalTimeSeconds": 75.32114868100001,
+      "rps": 52,
+      "meanLatencyMs": 690,
+      "maxLatencyMs": 9582,
+      "percentiles": {
+        "50": 612,
+        "90": 868,
+        "95": 964,
+        "99": 3508
+      },
+      "errorCodes": {
+        "502": 6
+      }
+    }
+  },
+  {
+    "concurrency": 40,
+    "gcm": {
+      "totalRequests": 4000,
+      "totalErrors": 0,
+      "totalTimeSeconds": 71.19179708600001,
+      "rps": 56,
+      "meanLatencyMs": 680,
+      "maxLatencyMs": 9475,
+      "percentiles": {
+        "50": 598,
+        "90": 801,
+        "95": 988,
+        "99": 3495
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 4000,
+      "totalErrors": 9,
+      "totalTimeSeconds": 81.122435829,
+      "rps": 49,
+      "meanLatencyMs": 750,
+      "maxLatencyMs": 23001,
+      "percentiles": {
+        "50": 639,
+        "90": 876,
+        "95": 1053,
+        "99": 3587
+      },
+      "errorCodes": {
+        "502": 5,
+        "-1": 4
+      }
+    }
+  },
+  {
+    "concurrency": 41,
+    "gcm": {
+      "totalRequests": 4100,
+      "totalErrors": 1,
+      "totalTimeSeconds": 71.540014673,
+      "rps": 57,
+      "meanLatencyMs": 710,
+      "maxLatencyMs": 13330,
+      "percentiles": {
+        "50": 628,
+        "90": 831,
+        "95": 996,
+        "99": 3581
+      },
+      "errorCodes": {
+        "-1": 1
+      }
+    },
+    "relay": {
+      "totalRequests": 4100,
+      "totalErrors": 1,
+      "totalTimeSeconds": 78.61965687200001,
+      "rps": 52,
+      "meanLatencyMs": 740,
+      "maxLatencyMs": 9444,
+      "percentiles": {
+        "50": 678,
+        "90": 898,
+        "95": 1070,
+        "99": 3572
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    }
+  },
+  {
+    "concurrency": 42,
+    "gcm": {
+      "totalRequests": 4200,
+      "totalErrors": 0,
+      "totalTimeSeconds": 76.72708742100001,
+      "rps": 55,
+      "meanLatencyMs": 760,
+      "maxLatencyMs": 12550,
+      "percentiles": {
+        "50": 731,
+        "90": 889,
+        "95": 1005,
+        "99": 3577
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 4200,
+      "totalErrors": 10,
+      "totalTimeSeconds": 84.53779812399999,
+      "rps": 50,
+      "meanLatencyMs": 820,
+      "maxLatencyMs": 21159,
+      "percentiles": {
+        "50": 764,
+        "90": 949,
+        "95": 1056,
+        "99": 3610
+      },
+      "errorCodes": {
+        "502": 6,
+        "-1": 4
+      }
+    }
+  },
+  {
+    "concurrency": 43,
+    "gcm": {
+      "totalRequests": 4300,
+      "totalErrors": 3,
+      "totalTimeSeconds": 79.647898467,
+      "rps": 54,
+      "meanLatencyMs": 790,
+      "maxLatencyMs": 12660,
+      "percentiles": {
+        "50": 722,
+        "90": 960,
+        "95": 1207,
+        "99": 3664
+      },
+      "errorCodes": {
+        "502": 3
+      }
+    },
+    "relay": {
+      "totalRequests": 4300,
+      "totalErrors": 1,
+      "totalTimeSeconds": 85.101725164,
+      "rps": 51,
+      "meanLatencyMs": 830,
+      "maxLatencyMs": 9633,
+      "percentiles": {
+        "50": 765,
+        "90": 1084,
+        "95": 1247,
+        "99": 3679
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    }
+  },
+  {
+    "concurrency": 44,
+    "gcm": {
+      "totalRequests": 4400,
+      "totalErrors": 0,
+      "totalTimeSeconds": 82.664791694,
+      "rps": 53,
+      "meanLatencyMs": 820,
+      "maxLatencyMs": 9816,
+      "percentiles": {
+        "50": 794,
+        "90": 1000,
+        "95": 1220,
+        "99": 3628
+      },
+      "errorCodes": {}
+    },
+    "relay": {
+      "totalRequests": 4400,
+      "totalErrors": 3,
+      "totalTimeSeconds": 91.381835469,
+      "rps": 48,
+      "meanLatencyMs": 880,
+      "maxLatencyMs": 21175,
+      "percentiles": {
+        "50": 839,
+        "90": 1063,
+        "95": 1207,
+        "99": 3649
+      },
+      "errorCodes": {
+        "-1": 3
+      }
+    }
+  },
+  {
+    "concurrency": 45,
+    "gcm": {
+      "totalRequests": 4500,
+      "totalErrors": 5,
+      "totalTimeSeconds": 97.98511271,
+      "rps": 46,
+      "meanLatencyMs": 970,
+      "maxLatencyMs": 21078,
+      "percentiles": {
+        "50": 1028,
+        "90": 1336,
+        "95": 1505,
+        "99": 3496
+      },
+      "errorCodes": {
+        "502": 4,
+        "-1": 1
+      }
+    },
+    "relay": {
+      "totalRequests": 4500,
+      "totalErrors": 0,
+      "totalTimeSeconds": 110.853049283,
+      "rps": 41,
+      "meanLatencyMs": 1080,
+      "maxLatencyMs": 34001,
+      "percentiles": {
+        "50": 1059,
+        "90": 1339,
+        "95": 1477,
+        "99": 3694
+      },
+      "errorCodes": {}
+    }
+  },
+  {
+    "concurrency": 46,
+    "gcm": {
+      "totalRequests": 4600,
+      "totalErrors": 1,
+      "totalTimeSeconds": 89.682455109,
+      "rps": 51,
+      "meanLatencyMs": 890,
+      "maxLatencyMs": 21033,
+      "percentiles": {
+        "50": 872,
+        "90": 1047,
+        "95": 1149,
+        "99": 3719
+      },
+      "errorCodes": {
+        "-1": 1
+      }
+    },
+    "relay": {
+      "totalRequests": 4600,
+      "totalErrors": 3,
+      "totalTimeSeconds": 99.493672429,
+      "rps": 46,
+      "meanLatencyMs": 860,
+      "maxLatencyMs": 9831,
+      "percentiles": {
+        "50": 863,
+        "90": 1064,
+        "95": 1210,
+        "99": 3550
+      },
+      "errorCodes": {
+        "502": 3
+      }
+    }
+  },
+  {
+    "concurrency": 47,
+    "gcm": {
+      "totalRequests": 4700,
+      "totalErrors": 1,
+      "totalTimeSeconds": 84.331953892,
+      "rps": 56,
+      "meanLatencyMs": 820,
+      "maxLatencyMs": 12681,
+      "percentiles": {
+        "50": 815,
+        "90": 1031,
+        "95": 1137,
+        "99": 3502
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    },
+    "relay": {
+      "totalRequests": 4700,
+      "totalErrors": 8,
+      "totalTimeSeconds": 106.645134247,
+      "rps": 44,
+      "meanLatencyMs": 830,
+      "maxLatencyMs": 33585,
+      "percentiles": {
+        "50": 742,
+        "90": 1053,
+        "95": 1183,
+        "99": 3634
+      },
+      "errorCodes": {
+        "502": 3,
+        "-1": 5
+      }
+    }
+  },
+  {
+    "concurrency": 48,
+    "gcm": {
+      "totalRequests": 4800,
+      "totalErrors": 3,
+      "totalTimeSeconds": 96.463008602,
+      "rps": 50,
+      "meanLatencyMs": 960,
+      "maxLatencyMs": 10153,
+      "percentiles": {
+        "50": 906,
+        "90": 1164,
+        "95": 1415,
+        "99": 3942
+      },
+      "errorCodes": {
+        "502": 3
+      }
+    },
+    "relay": {
+      "totalRequests": 4800,
+      "totalErrors": 1,
+      "totalTimeSeconds": 100.380800068,
+      "rps": 48,
+      "meanLatencyMs": 960,
+      "maxLatencyMs": 10095,
+      "percentiles": {
+        "50": 933,
+        "90": 1187,
+        "95": 1330,
+        "99": 3592
+      },
+      "errorCodes": {
+        "502": 1
+      }
+    }
+  },
+  {
+    "concurrency": 49,
+    "gcm": {
+      "totalRequests": 4900,
+      "totalErrors": 2,
+      "totalTimeSeconds": 114.065613364,
+      "rps": 43,
+      "meanLatencyMs": 1070,
+      "maxLatencyMs": 12991,
+      "percentiles": {
+        "50": 1032,
+        "90": 1383,
+        "95": 1640,
+        "99": 4094
+      },
+      "errorCodes": {
+        "502": 2
+      }
+    },
+    "relay": {
+      "totalRequests": 4900,
+      "totalErrors": 6,
+      "totalTimeSeconds": 112.681850783,
+      "rps": 43,
+      "meanLatencyMs": 1070,
+      "maxLatencyMs": 21303,
+      "percentiles": {
+        "50": 1055,
+        "90": 1341,
+        "95": 1574,
+        "99": 3673
+      },
+      "errorCodes": {
+        "502": 3,
+        "-1": 3
+      }
+    }
+  },
+  {
+    "concurrency": 50,
+    "gcm": {
+      "totalRequests": 5000,
+      "totalErrors": 6,
+      "totalTimeSeconds": 101.199743079,
+      "rps": 49,
+      "meanLatencyMs": 1000,
+      "maxLatencyMs": 21001,
+      "percentiles": {
+        "50": 994,
+        "90": 1196,
+        "95": 1320,
+        "99": 3870
+      },
+      "errorCodes": {
+        "502": 5,
+        "-1": 1
+      }
+    },
+    "relay": {
+      "totalRequests": 5000,
+      "totalErrors": 7,
+      "totalTimeSeconds": 111.592553317,
+      "rps": 45,
+      "meanLatencyMs": 1050,
+      "maxLatencyMs": 21433,
+      "percentiles": {
+        "50": 1026,
+        "90": 1279,
+        "95": 1425,
+        "99": 3747
+      },
+      "errorCodes": {
+        "502": 6,
+        "-1": 1
+      }
+    }
+  }
+]

@@ -7,6 +7,12 @@ var concurrency;
 var maxConcurrency = 50;
 var requestsPerConcurrency = 100;
 var startTime = Date.now();
+var c = 0;
+var total = 0;
+for (var i = 0; i < maxConcurrency; i++) {
+  total += requestsPerConcurrency * i;
+}
+total = total * 2;
 
 var overallResults = [];
 runTest();
@@ -61,13 +67,13 @@ function runTest() {
     });
 }
 
-var c = 0;
+
 function testLoad(options) {
   var deferred = Q.defer();
   options.statusCallback = function (result) {
     c++;
     if (c % 10 === 0) {
-      console.log('done', c, '/', maxRequests * 2)
+      console.log('done', c, '/', total)
     }
   };
   loadtest.loadTest(options, function (error, result) {
@@ -93,7 +99,6 @@ function compare(results) {
     relay: results[1]
   });
   if (concurrency < maxConcurrency) {
-    c = 0;
     runTest();
   } else {
     fs.writeFile(__dirname + '/results.json', JSON.stringify(overallResults, null, 2), function (err) {
