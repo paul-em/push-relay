@@ -3,13 +3,13 @@ var Q = require('q');
 var fs = require('fs');
 
 var maxRequests;
-var concurrency;
-var maxConcurrency = 50;
+var concurrency = 50;
+var maxConcurrency = 70;
 var requestsPerConcurrency = 100;
 var startTime = Date.now();
 var c = 0;
 var total = 0;
-for (var i = 0; i < maxConcurrency; i++) {
+for (var i = concurrency; i < maxConcurrency; i++) {
   total += requestsPerConcurrency * i;
 }
 total = total * 2;
