@@ -1,10 +1,14 @@
+/*
+ * This test should be run from another server than the relay server to see actual latency time
+ */
+
 var loadtest = require('loadtest');
 var Q = require('q');
 var fs = require('fs');
 
 var maxRequests;
 var concurrency = 50;
-var maxConcurrency = 70;
+var maxConcurrency = 55;
 var requestsPerConcurrency = 100;
 var startTime = Date.now();
 var c = 0;
@@ -72,7 +76,7 @@ function testLoad(options) {
   var deferred = Q.defer();
   options.statusCallback = function (result) {
     c++;
-    if (c % 10 === 0) {
+    if (c % 100 === 0) {
       console.log('done', c, '/', total)
     }
   };
