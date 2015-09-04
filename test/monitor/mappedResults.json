@@ -1,487 +1,402 @@
 [
   {
-    "cpu": 3,
-    "memory": 139526144,
+    "cpu": 2,
+    "memory": 145.7,
     "concurrency": 1
   },
   {
     "cpu": 0,
-    "memory": 139526144,
+    "memory": 145.7,
     "concurrency": 2
   },
   {
-    "cpu": 8,
-    "memory": 139726848,
+    "cpu": 15,
+    "memory": 145.8,
     "concurrency": 3
   },
   {
+    "cpu": 15,
+    "memory": 145.9,
+    "concurrency": 4
+  },
+  {
     "cpu": 22,
-    "memory": 137949184,
+    "memory": 145.9,
     "concurrency": 5
   },
   {
-    "cpu": 30,
-    "memory": 137998336,
+    "cpu": 40,
+    "memory": 146,
+    "concurrency": 6
+  },
+  {
+    "cpu": 25,
+    "memory": 146,
     "concurrency": 7
   },
   {
-    "cpu": 54,
-    "memory": 138067968,
+    "cpu": 35,
+    "memory": 146.1,
     "concurrency": 8
   },
   {
-    "cpu": 47,
-    "memory": 138162176,
-    "concurrency": 10
-  },
-  {
-    "cpu": 60,
-    "memory": 138240000,
-    "concurrency": 11
-  },
-  {
-    "cpu": 60,
-    "memory": 138321920,
-    "concurrency": 12
-  },
-  {
-    "cpu": 52,
-    "memory": 138428416,
-    "concurrency": 13
-  },
-  {
-    "cpu": 44,
-    "memory": 138543104,
-    "concurrency": 14
+    "cpu": 50,
+    "memory": 146.1,
+    "concurrency": 9
   },
   {
     "cpu": 40,
-    "memory": 138637312,
+    "memory": 146.2,
+    "concurrency": 10
+  },
+  {
+    "cpu": 40,
+    "memory": 146.2,
+    "concurrency": 11
+  },
+  {
+    "cpu": 40,
+    "memory": 146.2,
+    "concurrency": 12
+  },
+  {
+    "cpu": 47,
+    "memory": 146.2,
+    "concurrency": 13
+  },
+  {
+    "cpu": 70,
+    "memory": 146.2,
+    "concurrency": 14
+  },
+  {
+    "cpu": 29,
+    "memory": 146.2,
     "concurrency": 15
   },
   {
-    "cpu": 70,
-    "memory": 138723328,
+    "cpu": 53,
+    "memory": 146.2,
     "concurrency": 16
   },
   {
-    "cpu": 76,
-    "memory": 138887168,
+    "cpu": 50,
+    "memory": 146.3,
     "concurrency": 17
   },
   {
-    "cpu": 80,
-    "memory": 139288576,
+    "cpu": 78,
+    "memory": 147.5,
     "concurrency": 18
   },
   {
-    "cpu": 54,
-    "memory": 137891840,
+    "cpu": 73,
+    "memory": 148.4,
     "concurrency": 19
   },
   {
-    "cpu": 56,
-    "memory": 138031104,
+    "cpu": 75,
+    "memory": 148.4,
     "concurrency": 20
   },
   {
-    "cpu": 58,
-    "memory": 138178560,
+    "cpu": 79,
+    "memory": 148.4,
     "concurrency": 21
   },
   {
-    "cpu": 49,
-    "memory": 138313728,
+    "cpu": 57,
+    "memory": 148.4,
     "concurrency": 22
   },
   {
-    "cpu": 56,
-    "memory": 138452992,
+    "cpu": 72,
+    "memory": 148.4,
     "concurrency": 23
   },
   {
-    "cpu": 50,
-    "memory": 138596352,
+    "cpu": 88,
+    "memory": 148.4,
     "concurrency": 24
   },
   {
-    "cpu": 56,
-    "memory": 138829824,
+    "cpu": 89,
+    "memory": 148.5,
     "concurrency": 25
   },
   {
-    "cpu": 70,
-    "memory": 140402688,
+    "cpu": 86,
+    "memory": 149,
     "concurrency": 26
   },
   {
-    "cpu": 60,
-    "memory": 140947456,
+    "cpu": 75,
+    "memory": 145.2,
     "concurrency": 27
   },
   {
-    "cpu": 54,
-    "memory": 141111296,
+    "cpu": 65,
+    "memory": 145.2,
     "concurrency": 28
   },
   {
-    "cpu": 58,
-    "memory": 141352960,
+    "cpu": 70,
+    "memory": 145.2,
     "concurrency": 29
   },
   {
-    "cpu": 58,
-    "memory": 141619200,
+    "cpu": 63,
+    "memory": 145.2,
     "concurrency": 30
   },
   {
-    "cpu": 68,
-    "memory": 141770752,
+    "cpu": 82,
+    "memory": 145.3,
     "concurrency": 31
   },
   {
-    "cpu": 66,
-    "memory": 143560704,
+    "cpu": 75,
+    "memory": 144.5,
     "concurrency": 32
   },
   {
-    "cpu": 68,
-    "memory": 146874368,
+    "cpu": 83,
+    "memory": 144.5,
     "concurrency": 33
   },
   {
-    "cpu": 56,
-    "memory": 148336640,
+    "cpu": 78,
+    "memory": 144.5,
     "concurrency": 34
   },
   {
-    "cpu": 58,
-    "memory": 148584448,
+    "cpu": 66,
+    "memory": 144.5,
     "concurrency": 35
   },
   {
-    "cpu": 62,
-    "memory": 148848640,
+    "cpu": 73,
+    "memory": 145.1,
     "concurrency": 36
   },
   {
-    "cpu": 57,
-    "memory": 149086208,
+    "cpu": 74,
+    "memory": 145.9,
     "concurrency": 37
   },
   {
-    "cpu": 65,
-    "memory": 152391680,
+    "cpu": 50,
+    "memory": 145.9,
     "concurrency": 38
   },
   {
-    "cpu": 78,
-    "memory": 150814720,
+    "cpu": 73,
+    "memory": 145.9,
     "concurrency": 39
   },
   {
-    "cpu": 77,
-    "memory": 151197696,
+    "cpu": 92,
+    "memory": 145.6,
     "concurrency": 40
   },
   {
-    "cpu": 86,
-    "memory": 151474176,
+    "cpu": 58,
+    "memory": 143.8,
     "concurrency": 41
   },
   {
-    "cpu": 61,
-    "memory": 151717888,
+    "cpu": 75,
+    "memory": 144,
     "concurrency": 42
   },
   {
-    "cpu": 68,
-    "memory": 154335232,
+    "cpu": 72,
+    "memory": 144.2,
     "concurrency": 43
   },
   {
-    "cpu": 76,
-    "memory": 152162304,
+    "cpu": 70,
+    "memory": 143.1,
     "concurrency": 44
   },
   {
-    "cpu": 76,
-    "memory": 152473600,
+    "cpu": 68,
+    "memory": 140.4,
     "concurrency": 45
   },
   {
-    "cpu": 68,
-    "memory": 152731648,
+    "cpu": 71,
+    "memory": 140.5,
     "concurrency": 46
   },
   {
-    "cpu": 98,
-    "memory": 151360853,
+    "cpu": 46,
+    "memory": 142.1,
     "concurrency": 47
   },
   {
-    "cpu": 72,
-    "memory": 147853312,
+    "cpu": 43,
+    "memory": 146.1,
     "concurrency": 48
   },
   {
-    "cpu": 69,
-    "memory": 147853312,
+    "cpu": 57,
+    "memory": 145.9,
     "concurrency": 49
   },
   {
-    "cpu": 86,
-    "memory": 148986539,
+    "cpu": 61,
+    "memory": 145.9,
     "concurrency": 50
   },
   {
-    "cpu": 99,
-    "memory": 152715264,
+    "cpu": 57,
+    "memory": 145.7,
     "concurrency": 51
   },
   {
-    "cpu": 73,
-    "memory": 152821760,
+    "cpu": 65,
+    "memory": 145.1,
     "concurrency": 52
   },
   {
-    "cpu": 84,
-    "memory": 152895488,
+    "cpu": 72,
+    "memory": 145.2,
     "concurrency": 53
   },
   {
-    "cpu": 80,
-    "memory": 153415680,
+    "cpu": 77,
+    "memory": 145.3,
     "concurrency": 54
   },
   {
-    "cpu": 72,
-    "memory": 148652032,
+    "cpu": 77,
+    "memory": 149.4,
     "concurrency": 55
   },
   {
-    "cpu": 89,
-    "memory": 148652032,
+    "cpu": 80,
+    "memory": 151.3,
     "concurrency": 56
   },
   {
-    "cpu": 97,
-    "memory": 147386368,
+    "cpu": 60,
+    "memory": 151.3,
     "concurrency": 57
   },
   {
-    "cpu": 85,
-    "memory": 144736256,
+    "cpu": 71,
+    "memory": 149.2,
     "concurrency": 58
   },
   {
-    "cpu": 89,
-    "memory": 144984747,
+    "cpu": 50,
+    "memory": 145.4,
     "concurrency": 59
   },
   {
-    "cpu": 87,
-    "memory": 145357483,
+    "cpu": 76,
+    "memory": 145.4,
     "concurrency": 60
   },
   {
-    "cpu": 78,
-    "memory": 144906923,
+    "cpu": 84,
+    "memory": 148.6,
     "concurrency": 61
   },
   {
-    "cpu": 61,
-    "memory": 145018880,
+    "cpu": 84,
+    "memory": 146.7,
     "concurrency": 62
   },
   {
-    "cpu": 93,
-    "memory": 146029227,
+    "cpu": 66,
+    "memory": 146.8,
     "concurrency": 63
   },
   {
-    "cpu": 56,
-    "memory": 145385472,
+    "cpu": 92,
+    "memory": 149.8,
     "concurrency": 64
   },
   {
-    "cpu": 90,
-    "memory": 146272256,
+    "cpu": 86,
+    "memory": 155.1,
     "concurrency": 65
   },
   {
-    "cpu": 96,
-    "memory": 144758784,
+    "cpu": 69,
+    "memory": 150.6,
     "concurrency": 66
   },
   {
-    "cpu": 70,
-    "memory": 144920576,
+    "cpu": 69,
+    "memory": 143,
     "concurrency": 67
   },
   {
-    "cpu": 90,
-    "memory": 145806336,
+    "cpu": 78,
+    "memory": 143.4,
     "concurrency": 68
   },
   {
-    "cpu": 66,
-    "memory": 147617792,
+    "cpu": 67,
+    "memory": 150.4,
     "concurrency": 69
   },
   {
-    "cpu": 85,
-    "memory": 147753984,
+    "cpu": 63,
+    "memory": 152.2,
     "concurrency": 70
   },
   {
-    "cpu": 71,
-    "memory": 146442240,
+    "cpu": 69,
+    "memory": 152.2,
     "concurrency": 71
   },
   {
-    "cpu": 55,
-    "memory": 145389568,
+    "cpu": 86,
+    "memory": 151.3,
     "concurrency": 72
   },
   {
-    "cpu": 62,
-    "memory": 145727488,
+    "cpu": 82,
+    "memory": 149.7,
     "concurrency": 73
   },
   {
-    "cpu": 74,
-    "memory": 147021824,
+    "cpu": 87,
+    "memory": 150.9,
     "concurrency": 74
   },
   {
-    "cpu": 89,
-    "memory": 147641344,
+    "cpu": 97,
+    "memory": 154.2,
     "concurrency": 75
   },
   {
-    "cpu": 83,
-    "memory": 149436416,
+    "cpu": 78,
+    "memory": 153,
     "concurrency": 76
   },
   {
-    "cpu": 75,
-    "memory": 149204992,
+    "cpu": 81,
+    "memory": 153,
     "concurrency": 77
   },
   {
-    "cpu": 85,
-    "memory": 150489771,
+    "cpu": 90,
+    "memory": 156.5,
     "concurrency": 78
   },
   {
-    "cpu": 69,
-    "memory": 149299200,
+    "cpu": 60,
+    "memory": 158.1,
     "concurrency": 79
   },
   {
-    "cpu": 82,
-    "memory": 149403238,
+    "cpu": 90,
+    "memory": 157.5,
     "concurrency": 80
-  },
-  {
-    "cpu": 81,
-    "memory": 147910656,
-    "concurrency": 81
-  },
-  {
-    "cpu": 65,
-    "memory": 149060267,
-    "concurrency": 82
-  },
-  {
-    "cpu": 59,
-    "memory": 153024512,
-    "concurrency": 83
-  },
-  {
-    "cpu": 75,
-    "memory": 151519232,
-    "concurrency": 84
-  },
-  {
-    "cpu": 73,
-    "memory": 152554496,
-    "concurrency": 85
-  },
-  {
-    "cpu": 80,
-    "memory": 156479488,
-    "concurrency": 86
-  },
-  {
-    "cpu": 73,
-    "memory": 155787264,
-    "concurrency": 87
-  },
-  {
-    "cpu": 86,
-    "memory": 154576213,
-    "concurrency": 88
-  },
-  {
-    "cpu": 55,
-    "memory": 151142400,
-    "concurrency": 89
-  },
-  {
-    "cpu": 81,
-    "memory": 150026650,
-    "concurrency": 90
-  },
-  {
-    "cpu": 67,
-    "memory": 147384320,
-    "concurrency": 91
-  },
-  {
-    "cpu": 77,
-    "memory": 146841600,
-    "concurrency": 92
-  },
-  {
-    "cpu": 87,
-    "memory": 145722368,
-    "concurrency": 93
-  },
-  {
-    "cpu": 77,
-    "memory": 148336640,
-    "concurrency": 94
-  },
-  {
-    "cpu": 81,
-    "memory": 149762867,
-    "concurrency": 95
-  },
-  {
-    "cpu": 84,
-    "memory": 146767053,
-    "concurrency": 96
-  },
-  {
-    "cpu": 87,
-    "memory": 150025011,
-    "concurrency": 97
-  },
-  {
-    "cpu": 67,
-    "memory": 153432064,
-    "concurrency": 98
-  },
-  {
-    "cpu": 89,
-    "memory": 149638349,
-    "concurrency": 99
-  },
-  {
-    "cpu": 91,
-    "memory": 147300352,
-    "concurrency": 100
   }
 ]

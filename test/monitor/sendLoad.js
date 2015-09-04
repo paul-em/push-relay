@@ -8,7 +8,7 @@ var fs = require('fs');
 
 var maxRequests;
 var concurrency = 0;
-var maxConcurrency = 101;
+var maxConcurrency = 81;
 var requestsPerConcurrency = 1;
 var startTime = Date.now();
 var c = 0;

@@ -19,7 +19,7 @@ setInterval(function(){
       saveReport();
     }
   });
-}, 500);
+}, 200);
 
 function saveReport(){
   fs.writeFile(__dirname + '/results.json', JSON.stringify(data, null, 2), function (err) {

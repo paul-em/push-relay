@@ -22,7 +22,7 @@ results.forEach(function (result) {
         });
         mappedResults.push({
           cpu: Math.round(total.cpu / c),
-          memory: Math.round(total.memory / c),
+          memory: Math.round(total.memory / c / 1000 / 100) / 10,
           concurrency: concurrency
         });
         buffer = [];
