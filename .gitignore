@@ -1,3 +1,4 @@
 .idea
 node_modules
-pushBrowser/platforms
+/tests/pushBrowser/platforms
+/tests/deviceLatency/applicationServerTest/platforms
