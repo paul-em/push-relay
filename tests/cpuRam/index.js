@@ -1,10 +1,10 @@
-/*
- * This test should run on the relay server
- */
+/*** adjustable parameters ***/
+var pid = 22786; // check if correct pid of main relay server process
+/*****************************/
 var usage = require('usage');
 var fs = require('fs');
 
-var pid = 22786; // check if correct pid of main process
+
 var startTime = Date.now();
 var options = {keepHistory: true};
 var data = [];

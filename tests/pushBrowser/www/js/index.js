@@ -1,3 +1,8 @@
+/*** adjustable parameters ***/
+var senderId = '310734510853';
+/*****************************/
+
+
 var onNotificationGCM;
 var registration;
 var ref;
@@ -48,7 +53,7 @@ function getRegistrationID() {
         }, 20000);
       }, function () {
         reject('register fail');
-      }, {'senderID': '1214094664', 'ecb': 'onNotificationGCM'});		// required!
+      }, {'senderID': senderId, 'ecb': 'onNotificationGCM'});		// required!
 
 
       onNotificationGCM = function (e) {

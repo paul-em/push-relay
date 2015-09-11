@@ -17,7 +17,3 @@ In order to try out this project you have to deploy the index.js and package.js 
 
 If you want to use files in other locations use --cert, --key and --apikey when starting the server.
 In order to change the port where the server is running use --port.
-
-## How to get the push browser running
-
-In the folder PushBrowser you can find a cordova project. For information about how to run cordova projects and tools you need to have installed visit [cordova.apache.org](http://cordova.apache.org/). Aferwards just add android platform and you are good to go.

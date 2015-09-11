@@ -1,6 +1,9 @@
-/*
- * This test should be run from another server than the relay server to see actual latency time
- */
+/*** adjustable parameters ***/
+var maxConcurrency = 81;
+var requestsPerConcurrency = 1;
+var relayServerLocation = 'https://paulem.eu:9000';
+var authorization = 'AIzaSyCjwXopyMFOpL0C5SOzvKdC9U3hVe2LZvw';
+/*****************************/
 
 var loadtest = require('loadtest');
 var Q = require('q');
@@ -8,8 +11,6 @@ var fs = require('fs');
 
 var maxRequests;
 var concurrency = 0;
-var maxConcurrency = 81;
-var requestsPerConcurrency = 1;
 var startTime = Date.now();
 var c = 0;
 var total = 0;
@@ -37,10 +38,10 @@ function runTest() {
     concurrency: concurrency,
 
     method: 'POST',
-    url: 'https://paulem.eu:9000/p/APA91bHDsiWcJT50jFq8d_m-gd6YDds4CqaNIKU4G4g9eq_eIZ4uOUERJWZcaXLgpKWG7qEJtOwtZRN_LpsOm8hTiHZDW19OM4c8vXN8Yz4SZVabZfdxhF4LtmS_ocr3vRzfG86rkR39',
+    url: relayServerLocation + '/p/APA91bHDsiWcJT50jFq8d_m-gd6YDds4CqaNIKU4G4g9eq_eIZ4uOUERJWZcaXLgpKWG7qEJtOwtZRN_LpsOm8hTiHZDW19OM4c8vXN8Yz4SZVabZfdxhF4LtmS_ocr3vRzfG86rkR39',
     'content-type': 'text/plain;charset=utf8',
     headers: {
-      Authorization: 'key=AIzaSyCjwXopyMFOpL0C5SOzvKdC9U3hVe2LZvw'
+      Authorization: 'key=' + authorization
     },
     body: '4p2LmDNaZhuoBV-W6fRlE_nYnGjLcEZa'
   }).then(compare)

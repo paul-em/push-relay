@@ -1,11 +1,11 @@
-/*
- * This test should be run from another server than the relay server to see actual load
- */
+/*** adjustable parameters ***/
+var concurrency = 10;
+var authorization = 'AIzaSyCjwXopyMFOpL0C5SOzvKdC9U3hVe2LZvw';
+var relayServerLocation = 'https://paulem.eu:9000';
+/*****************************/
 
 var loadtest = require('loadtest');
 var Q = require('q');
-
-var concurrency = 10;
 
 runTest();
 
@@ -16,10 +16,10 @@ function runTest() {
     concurrency: concurrency,
 
     method: 'POST',
-    url: 'https://paulem.eu:9000/p/APA91bHDsiWcJT50jFq8d_m-gd6YDds4CqaNIKU4G4g9eq_eIZ4uOUERJWZcaXLgpKWG7qEJtOwtZRN_LpsOm8hTiHZDW19OM4c8vXN8Yz4SZVabZfdxhF4LtmS_ocr3vRzfG86rkR39',
+    url: relayServerLocation  + '/p/APA91bHDsiWcJT50jFq8d_m-gd6YDds4CqaNIKU4G4g9eq_eIZ4uOUERJWZcaXLgpKWG7qEJtOwtZRN_LpsOm8hTiHZDW19OM4c8vXN8Yz4SZVabZfdxhF4LtmS_ocr3vRzfG86rkR39',
     'content-type': 'text/plain;charset=utf8',
     headers: {
-      Authorization: 'key=AIzaSyCjwXopyMFOpL0C5SOzvKdC9U3hVe2LZvw'
+      Authorization: 'key=' + authorization
     },
     body: '4p2LmDNaZhuoBV-W6fRlE_nYnGjLcEZa4p2LmDNaZhuoBV-W6fRlE_nYnGjLcEZa4p2LmDNaZhuoBV-W6fRlE_nYnGjLcEZaW3ca' // 100 bytes
   }).then(runTest)

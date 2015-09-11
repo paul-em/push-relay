@@ -1,3 +1,7 @@
+/*** adjustable parameters ***/
+var senderId = '310734510853';
+/*****************************/
+
 var pushData = [];
 var $ul;
 var fulfillRegistration;
@@ -27,7 +31,7 @@ function getRegistrationID() {
         }, 20000);
       }, function () {
         reject('register fail');
-      }, {'senderID': '310734510853', 'ecb': 'onNotificationGCM'});		// required!
+      }, {'senderID': senderId, 'ecb': 'onNotificationGCM'});		// required!
     } else {
       reject('no pushNotification plugin found')
     }
