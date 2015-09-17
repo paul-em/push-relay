@@ -8,7 +8,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     curl_exec($curl);
     $status = curl_getinfo($curl)['http_code'];
     curl_close($curl);
-    http_response_code(200);
     echo $status;
 } else {
     http_response_code(501);

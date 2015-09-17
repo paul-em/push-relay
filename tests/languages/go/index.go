@@ -16,7 +16,6 @@ func serveRest(w http.ResponseWriter, r *http.Request) {
             panic(err)
         }
         defer resp.Body.Close()
-        w.WriteHeader(http.StatusOK)
         fmt.Fprintf(w, strconv.Itoa(resp.StatusCode))
     } else {
         w.WriteHeader(http.StatusNotFound)

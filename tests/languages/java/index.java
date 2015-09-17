@@ -31,6 +31,10 @@ class index
                     }
                 } else {
                     try {
+                        out.println("HTTP/1.1 501 Not Implemented");
+                        out.println("Content-Type: text/plain");
+                        out.println("Content-Length: 15");
+                        out.println("");
                         out.println("Not Implemented");
                     } finally {
                         socket.close();

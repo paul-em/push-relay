@@ -9,11 +9,9 @@ var options = {
 var server = http.createServer(function(req, res){
   if(req.method === 'POST'){
     var endpointReq = http.request(options, function(endpointRes){
-      res.writeHead(200);
       res.end(endpointRes.statusCode + '');
     });
     endpointReq.on('error', function(e){
-      res.writeHead(200);
       res.end('500');
     });
     endpointReq.end();
