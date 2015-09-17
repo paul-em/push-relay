@@ -1,5 +1,5 @@
 <?php
-$url = 'http://localhost:3001';
+$url = 'http://localhost:4000';
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $curl = curl_init($url);
@@ -8,7 +8,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     curl_exec($curl);
     $status = curl_getinfo($curl)['http_code'];
     curl_close($curl);
-    echo $status;
+    if($status !== 200){
+        http_response_code(503);
+        echo 'Service unavailable';
+    } else {
+        http_response_code(200);
+        echo $status;
+    }
 } else {
     http_response_code(501);
     echo 'Not implemented';
